@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512..." crossorigin="anonymous" />
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+  <title>RentoMatic | Documentation</title>
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="doc assets/vendor/bootstrap/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="doc assets/vendor/font-awesome/css/all.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="doc assets/vendor/magnific-popup/magnific-popup.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="doc assets/vendor/highlight.js/styles/github.css" />
+
+  <link rel="stylesheet" type="text/css" href="doc assets/css/stylesheet.css" />
+  <style>
+    #search-bar {
+      padding: 5px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      border: 2px solid;
+    }
+
+    body {
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+
+    .toggle-btn {
+      cursor: pointer;
+    }
+
+    body.dark-mode .idocs-content {
+      background-color: black;
+
+    }
+
+    body:not(.dark-mode) .idocs-content {
+      background-color: white;
+    }
+
+    body.dark-mode h1,
+    body.dark-mode h2,
+    body.dark-mode h3 {
+      color: white;
+    }
+
+    body:not(.dark-mode) h1,
+    body:not(.dark-mode) h2,
+    body:not(.dark-mode) h3 {
+      color: black;
+    }
+
+    body.dark-mode .primary-menu {
+      background-color: black;
+      color: white;
+    }
+
+    body:not(.dark-mode) .primary-menu {
+      background-color: white;
+      color: black;
+    }
+
+    body.dark-mode .idocs-navigation {
+      background-color: black !important;
+      color: white !important;
+    }
+
+    body:not(.dark-mode) .idocs-navigation {
+      background-color: white !important;
+      color: black !important;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+  <div id="main-wrapper">
+
+    <header id="header" class="sticky-top">
+
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <a class="logo ml-md-3" href="index.html" title="iDocs Template"><br> <br> <br>
+            <h2>RentoMatic</h2>
+          </a>
+
+
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#header-nav"><span></span><span></span><span></span></button>
+
+          <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+            <input type="text" id="search-bar" placeholder="Search...">
+
+            <ul class="navbar-nav">
+              <div class="toggle-btn" onclick="toggleDarkMode()">
+                <i class="fas fa-sun"></i> <!-- Font Awesome sun icon for light mode -->
+                <i class="fas fa-moon" style="display:none;"></i> <!-- Font Awesome moon icon for dark mode -->
+              </div>
+          </div>
+
+
+
+        </div>
+      </nav>
+
+    </header>
+
+    <div id="content" role="main">
+
+
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#idocs_start">Quick Start</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_installation">Introduction</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_html_structure">Configuartion</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_sass">Installation</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_layout">UI Element</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_header">Layout</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_navbar">Grids</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_sidebar">Buttons</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_footer">Forms</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_box_layout">Cards</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_box_layout">Navbar</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_box_layout">Icons</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#idocs_content">Interactions</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#idocs_typography">Animations</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_code">Rendering</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_table">Routing</a></li>
+              <li class="nav-item"><a class="nav-link" href="#idocs_icons">Validation</a></li>
+
+            </ul>
+
+      </div>
+
+
+      <div class="idocs-content">
+        <div class="container">
+
+
+          <section id="idocs_start">
+            <h3>What is Software About?</h3>
+            <ul>
+              <li>In bulleted Points</li>
+              <li>2 number</li>
+              <li>3 number</li>
+
+            </ul>
+
+            <h3>Features</h3>
+            <p class="lead">A Multi-Demo means that by purchasing a single license of Metronic, you are entitled to
+              receive and use all the different demo types
+              that comes packed within Metronic itself. Each Demo within Metronic is uniquely designed for specific
+              types of solutions or project
+              requirement. For example, when you purchase Metronic, you’ll be able to utilize Metronic’s Default demo, a
+              CRM Application demo, an
+              Intranet System demo, an eCommerce Backend demo, a SAAS Service demo and so much more. Each Demo is
+              organized within its own
+              folder, which is also neatly packed with its own SCSS and JS files or any other files that are
+              specifically required for that demo.</p>
+
+        </div>
+        </section>
+
+
+        <hr class="divider">
+
+
+        <section id="idocs_installation">
+          <h2>File Structure</h2>
+
+
+          <li><code>design</code> - The theme's figma design files.
+            <ul>
+              <li><code>theme</code> -The main theme folder</li>
+              <li><code>dist</code> - The destination folder that contains of the html templates and compiled assets.
+              </li>
+              <li><code>assets</code> - Static assets js, css, images, fonts compiled from the source folder. </li>
+              <li><code>HTML/sass</code> - Sass files</li>
+              <li><code>HTML/vendor</code> – All external libs.</li>
+            </ul>
+          <li><code>HTML/index.html</code> - Homepage
+          </li>
+
+
+        </section>
+
+        <hr class="divider">
+
+
+        <section id="idocs_html_structure">
+          <h2>Configuration</h2>
+          <se>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat ullam optio aliquid dolorum a
+            veritatis, deleniti odio. Voluptate debitis sint nesciunt accusamus, iusto laborum alias quaerat molestiae
+            quisquam est!<br>
+
+        </section>
+        <hr class="divider">
+
+
+        <section id="idocs_sass">
+          <h2>Installation</h2>
+
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos enim tenetur recusandae nam nostrum
+            magni magnam laboriosam cumque error assumenda vero iure consequatur optio perferendis sequi eos quidem
+            soluta atque, doloribus perspiciatis dolore sit possimus! Optio debitis laudantium error fugiat?</p>
+        </section>
+
+
+        <hr class="divider">
+
+
+        <section id="idocs_layout">
+          <h2>UI Element</h2>
+          <p class="lead mb-5">Documentation and examples for header, navbar, sidebar, footer</p>
+        </section>
+
+
+        <section id="idocs_header">
+          <h2>Layout </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam ullam, dicta praesentium accusantium odit
+            commodi aperiam accusamus quam voluptas?</p>
+
+
+        </section>
+
+        <hr class="divider">
+
+
+        <section id="idocs_navbar">
+          <h2>Grids</h2>
+          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium repudiandae illo nulla
+            enim nostrum quos.</p>
+
+        </section>
+
+        <hr class="divider">
+
+
+        <section id="idocs_sidebar">
+          <h2>Buttons</h2>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptas quam totam voluptatum
+            nesciunt delectus dolores, vitae quod asperiores, libero neque possimus at. Omnis deleniti molestias facere
+            odio ut amet.</p>
+        </section>
+
+        <hr class="divider">
+
+
+        <section id="idocs_footer">
+          <h2>Forms</h2>
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At officiis dolore odio corrupti amet autem
+            soluta incidunt adipisci totam tempora, ullam beatae vel optio illum maiores. Vero temporibus odit nostrum,
+            fugit voluptas eos, necessitatibus deleniti ipsam cupiditate esse quod sunt!</p>
+        </section>
+
+        <hr class="divider">
+
+        
+        <section id="idocs_box_layout">
+          <h2>Cards</h2>
+          <div>
+          
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident nihil ab est commodi recusandae
+              necessitatibus nesciunt at explicabo, sed amet perspiciatis, ipsa iusto sunt aut quibusdam eaque ipsam
+              fugiat?</p>
+          </div>
+        </section>
+
+        <hr class="divider">
+
+        
+        <section id="idocs_content">
+          <h2>Navbar</h2>
+          <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quas ducimus accusantium
+            veniam a facilis modi doloribus maiores, illo itaque!</p>
+        </section>
+
+       
+        <section id="idocs_typography">
+          <h2>Animations</h2>
+          <p class="text-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloremque velit tempore
+            quibusdam numquam provident eveniet repellendus quod quos eum.</p>
+         
+        </section>
+
+        <hr class="divider">
+
+       
+        <section id="idocs_code">
+          <h2>Rendering</h2>
+          <p class="text-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, illum dolores sed
+            praesentium quas sint deleniti at minima adipisci provident!</p>
+
+         
+        </section>
+
+        <hr class="divider">
+
+       
+        <section id="idocs_table">
+          <h2>Routing</h2>
+     
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quam maiores beatae, ratione, consectetur
+            corporis reprehenderit id facere aspernatur exercitationem rem eos, ab consequatur optio mollitia veniam
+            quaerat illo odio?</p>
+        </section>
+
+        <hr class="divider">
+
+        
+        <section id="idocs_icons">
+          <h2>Validation</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laboriosam inventore numquam, perspiciatis
+            eveniet exercitationem possimus illo officia voluptates rerum. Eaque nulla, inventore doloremque porro
+            laborum veritatis voluptatibus accusamus. Porro voluptas ex commodi illum totam nulla exercitationem
+            recusandae vel est.</p>
+
+        
+        </section>
+
+        
+      </div>
+   
+      <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+          class="fa fa-chevron-up"></i></a>
+
+     
+      <script src="doc assets/vendor/jquery/jquery.min.js"></script>
+      <script src="doc assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+      <script src="doc assets/vendor/highlight.js/highlight.min.js"></script>
+   
+      <script src="doc assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  
+      <script src="doc assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+   
+      <script src="doc assets/js/theme.js"></script>
+      
+      <script>
+        function toggleDarkMode() {
+          const body = document.body;
+          body.classList.toggle('dark-mode');
+
+          const sunIcon = document.querySelector('.fa-sun');
+          const moonIcon = document.querySelector('.fa-moon');
+
+          if (body.classList.contains('dark-mode')) {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'inline-block';
+          } else {
+            sunIcon.style.display = 'inline-block';
+            moonIcon.style.display = 'none';
+          }
+        }
+      </script>
+
+</body>
+
+</html>
